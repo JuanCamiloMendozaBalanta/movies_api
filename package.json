@@ -1,0 +1,30 @@
+{
+  "name": "movies_api",
+  "version": "1.0.0",
+  "description": "Movies api, managment your favorites movies ## Table of contents * [General info](#general-info) * [Technologies](#technologies) * [Setup](#setup)",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test && jest --forceExit --detectOpenHandles --coverage",
+    "test:watch": "npm run test -- --coverage --watchAll",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanCamiloMendozaBalanta/movies_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanCamiloMendozaBalanta/movies_api/issues"
+  },
+  "homepage": "https://github.com/JuanCamiloMendozaBalanta/movies_api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "mongoose": "^5.8.11",
+    "nodemon": "^1.19.4"
+  }
+}
