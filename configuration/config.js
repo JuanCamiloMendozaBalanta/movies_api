@@ -12,7 +12,7 @@ const seed = process.env.SEED;
 
 const generateUrlDB = () => {
   let url = '';
-  if (environment === 'DEV') {
+  if (environment != 'PROD') {
     url = `mongodb://${host}:${db_port}/${shema}`;
   } else {
     url = `mongodb+srv://${db_user}:${db_password}@cluster0-2vgr1.mongodb.net/${shema}?retryWrites=true&w=majority`;
