@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
   if (environment === 'DEV') {
     res.setHeader('Access-Control-Allow-Origin', `http://localhost:3000`);
   } else {
-    res.setHeader('Access-Control-Allow-Origin', `http://localhost:3000`);
+    res.setHeader('Access-Control-Allow-Origin', `https://movies-web-site.herokuapp.com`);
   }
 
   // Request methods you wish to allow
